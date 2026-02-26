@@ -33,8 +33,8 @@ A high-fidelity, real-time 3D simulation of the **Lorenz strange attractor** bui
 ### Compilation
 
 ```bash
-git clone https://github.com/your-org/lorenz-attractor.git
-cd lorenz-attractor
+git clone https://github.com/santiagorosa3162-eng/lorenz-attractor-3d.git
+cd lorenz-attractor-3d
 
 # Development build (fast compile, dynamic linking enabled)
 cargo run
