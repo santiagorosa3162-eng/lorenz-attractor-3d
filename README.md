@@ -272,19 +272,6 @@ Fixed step size makes the simulation deterministic and allows the user to direct
 
 ---
 
-## Future Enhancements
-
-- **Multiple simultaneous trajectories** with different initial conditions to visualize Lyapunov divergence
-- **Adaptive RK45 (Dormand-Prince)** with embedded error estimation and automatic step control
-- **Custom mesh rendering** with GPU compute for 10⁶+ point trails
-- **Poincaré section** visualization (intersection of trajectory with a plane)
-- **Bifurcation diagram** as ρ varies, showing transition from fixed points to chaos
-- **Export** trail data to CSV or PLY for external analysis
-- **Color mode selector**: velocity, acceleration, time, curvature
-- **VR/AR support** via Bevy's XR plugins for immersive exploration
-
----
-
 ## License
 
 MIT
