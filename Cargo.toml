@@ -1,0 +1,32 @@
+[package]
+name = "lorenz-attractor"
+version = "1.0.0"
+edition = "2021"
+authors = ["Simulation Engineering Team"]
+description = """
+Professional 3D simulation and visualization of the Lorenz Strange Attractor.
+Implements RK4 and Euler numerical integration with real-time parameter control,
+orbital camera, and velocity-mapped trail coloring using the Bevy engine.
+"""
+license = "MIT"
+keywords = ["lorenz", "chaos", "simulation", "bevy", "attractor"]
+categories = ["simulation", "visualization", "science"]
+
+[dependencies]
+# Bevy 0.14 — latest stable release with mature ECS and gizmo APIs
+bevy = { version = "0.14", features = ["dynamic_linking"] }
+
+# egui integration for immediate-mode UI panels
+bevy_egui = "0.28"
+
+[profile.dev]
+opt-level = 1                # Moderate optimization in dev for acceptable frame rates
+
+[profile.dev.package."*"]
+opt-level = 3                # Full optimization for dependencies (Bevy compile time fix)
+
+[profile.release]
+opt-level = 3
+lto = "thin"                 # Link-time optimization for release builds
+codegen-units = 1            # Maximum optimization at cost of compile time
+strip = true                 # Strip debug symbols for smaller binary
