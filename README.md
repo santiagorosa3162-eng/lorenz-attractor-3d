@@ -2,8 +2,6 @@
 
 A high-fidelity, real-time 3D simulation of the **Lorenz strange attractor** built with **Rust** and the **Bevy** game engine. Implements both Euler and Runge-Kutta 4 numerical integration with full parameter control, orbital camera, velocity-mapped trail coloring, and live diagnostic overlays.
 
-This is a native desktop application — no WebAssembly, no browser, no JavaScript.
-
 ---
 
 ## Technical Stack
